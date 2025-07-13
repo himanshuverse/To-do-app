@@ -3,7 +3,7 @@ const listContainer =document.getElementById('list-container')
 
 function addTask(){
     if (inputbox.value==='') {
-        alert("You must Write something")
+        alert("Please Add Task")
     }else{
         let li=document.createElement("li");
             li.innerHTML=inputbox.value;
@@ -15,6 +15,7 @@ function addTask(){
     inputbox.value="";
     saveData();
 }
+
 
 listContainer.addEventListener("click",function(e){
 if (e.target.tagName==="LI") {
